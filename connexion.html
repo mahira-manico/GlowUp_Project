@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
 </head>
 <body>
-    
+
     <header>
         <nav>
             <ul>
@@ -15,9 +15,168 @@
                 <li><a href="#apropos">A Propos</a></li>
                 <li><a href="#communaute">Communauté</a></li>
                 <li><a href="#contacts">Contacts</a></li>
+
+                <search>
+                <form action="./search/">
+                    <input type="search" id="products"  placeholder="Rechercher un produit..."/>
+                    <button type="submit">Rechercher</button>
+                </form>
+                </search>
+
             </ul>
         </nav>
     </header>
+
+    <main role="main">
+
+        <form role="form" id="connexion">
+            <h1 id="main-title">Créer un compte et rejoins la communauté!</h1>
+            <div id="login">
+ 
+
+            <div id="bloc1">
+                <label for="name">Prénom</label>
+                <input type="text" id="name" autocapitalize="words" minlength="2" maxlength="20" required/>
+
+                <label for="surname">Nom</label>
+                <input type="text" id="surname" autocapitalize="words" minlength="2" maxlength="20" required/>
+            </div>
+
+            <div id="bloc2">
+                <label for="email">Email</label>
+                <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+
+                <label for="birthdate">Date de naissance</label>
+                <input type="date" id="birthdate" required/>
+            </div>
+
+            <div id="bloc3">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" minlength="8" maxlength="20" required/>
+
+                <label for="confirm-pswd">Confirmer le mot de passe</label>
+                <input type="password" id="confirm-pswd"  minlength="8" maxlength="20" required/>
+            </div>
+
+            <small>*</small>
+
+           <article id="checks">
+            <label for="check-policy">lorem ipsum</label>
+            <input type="checkbox" id="check-policy" required>
+
+            <label for="check-ad">lorem ipsum</label>
+            <input type="checkbox" id="check-ad">
+           </article>
+        
+        <section id="fidelity">
+            <span>Notre Programme de Fidélité</span>
+
+            <div id="logo-ads">
+                <div class="squares">
+                <img src="" alt="" loading="lazy" >
+                </div>
+                
+                <div class="squares">
+                <img src="" alt="" loading="lazy">
+                </div>
+
+                <div class="squares">
+                <img src="" alt="" loading="lazy">
+                </div>
+            </div>
+
+            <p id="speech-fidelity"></p>
+        </section>
+
+        <button type="submit" id="form">Créer un compte</button>
+
+            </div>
+        </form>
+        
+
+        <span>Mot de passe oublié? Pas de panique</span>
+
+        <section id="newlsetter">
+           <article id="right">
+            <h2>Inscrit toi à notre newsletter!</h2>
+            <label for="email-news"></label>
+            <input type="email" id="email-news" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+           <div id="text-section">
+            <p></p>
+            <p></p>
+           </div>
+           </article>
+
+           <div id="left">
+             <picture>
+               <source media="(max-width: 600px)" srcset="">
+               <img src="" alt="">
+             </picture>
+           </div>
+        </section>
+    </main>
+
+     <footer>
+        <img src="" alt="" loading="lazy" id="logo" width="150" height="50">
+        
+        <nav id="more">
+         <div class="inside-footer">
+            <h4></h4>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </div>
+        </nav>
+       
+        <nav id="policy">
+        <div class="inside-footer">
+            <h4></h4>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </div>
+        </nav>
+
+        <nav id="about">
+        <div class="inside-footer">
+            <h4></h4>
+             <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </div>
+        </nav>
+
+        <section id="social">
+            <div id="insta-round">
+               <a href="" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
+                <i class="fa-brands fa-instagram"></i>
+               </a>
+            </div>
+
+            <div id="tiktok-round">
+                <a href="" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Tik Tok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+
+            <div id="facebook-round">
+                 <a href="" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                 </a>
+            </div>
+
+            <small>Made with love by Mahira @Copywright</small>
+        </section>
+    </footer>
     
 </body>
 </html>
